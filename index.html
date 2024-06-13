@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simple app with Electron</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./static/app.css">
+  </head>
+  <body>
+    <div class="fileName">
+      <label for="fileName">File input</label>
+      <input id="fileName" type="text" placeholder="Enter file name">
+    </div>
+    <div class="sourceFolder">
+      <label for="sourceInput">Folder input</label>
+      <input id="sourceInput" type="text" placeholder="Enter source Folder">
+      <button id="sourceBtn">Select Source Folder</button>
+    </div>
+    <div class="destFolder">
+      <label for="destInput">Folder input</label>
+      <input id="destInput" type="text" placeholder="Enter destination Folder">
+      <button id="destBtn">Select Destination Folder</button>
+    </div>
+    <div class="fileType">
+      <label for="fileType">File type</label>
+      <select id="fileType">
+        <option value="" selected >ALL</option>
+        <option value=".pdf" >PDF</option>
+        <option value=".txt">TXT</option>
+        <option value=".doc">DOC</option>
+        <option value=".dwg">DWG</option>
+        <!-- Thêm các tùy chọn khác nếu cần -->
+      </select>
+    </div>
+    <button id="copyBtn">Copy File</button>
+    <p id="result"></p>
+
+    <script src="./static/app.js"></script>
+  </body>
+</html>
